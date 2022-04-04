@@ -16,7 +16,7 @@ body{
 
 //header
 .header{
-    background-color: $font-dark;
+    background-color: $primary;
     position: fixed;
     width: 100%;
     z-index: 10;
@@ -26,7 +26,7 @@ body{
         .menu{
             transition: all 0.3s;
             &:hover,&:active{
-                color: $font-light;
+                color: $font-hover;
             }
         }
     }
@@ -60,7 +60,7 @@ body{
         a{
             &:hover,&:active{
                 color: white;
-                background-color: $font-dark;
+                background-color: $primary;
             }
         }
     }
@@ -96,14 +96,14 @@ body{
 
 // footer
 .bg-footer{
-    background-color: $font-dark;
+    background-color: $primary;
 }
 .footer{
     max-width: 992px;
     a{
         transition: all 0.3s;
         &:hover,&:active{
-            color: $font-light;
+            color: $font-hover;
             transform: scale(1.05);
         }
     }

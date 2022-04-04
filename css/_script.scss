@@ -46,7 +46,7 @@
     .border-line{
         width:100px;
         height:2px;
-        background: $font-dark;
+        background: $primary
     }
     li{
         width: 30%;
@@ -72,7 +72,7 @@
             background-color: $primary;
             border: 1px solid $primary;
             &:hover,&:active{
-                color: $font-dark;
+                color: $font-hover;
                 background-color: white;
             }
         }

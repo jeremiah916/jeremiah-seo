@@ -1,9 +1,12 @@
-$primary: #005C98;
-$second:#1C1C1C;
-$third: #F5F5F5;
-$font-dark: #073A59;
-$font-light: #71BBD9;
-$font-lighter: #a5dcf1;
+$primary: #2f3536;
+$second:#6D7365;
+$third: #A69668;
+$forth: #D9C0A3;
+$font-hover: #F2AC57;
+// $font-dark: #073A59;
+// $font-light: #71BBD9;
+// $font-lighter: #a5dcf1;
+
 // margin
 .m0-a{
     margin: 0 auto;
@@ -286,14 +289,11 @@ $font-lighter: #a5dcf1;
 .third{
     color: $third;
 }
-.font-dark{
-    color: $font-dark;
+.forth{
+    color: $forth;
 }
-.font-light{
-    color: $font-light;
-}
-.font-lighter{
-    color: $font-lighter;
+.font-hover{
+    color: $font-hover;
 }
 
 // background-color
@@ -306,14 +306,17 @@ $font-lighter: #a5dcf1;
 .bg-third{
     background-color: $third;
 }
+.bg-forth{
+    background-color: $forth;
+}
+.bg-font-hover{
+    background-color: $font-hover;
+}
 .bg-white{
     background-color: #FFF;
 }
 .bg-black{
     background-color: #000;
-}
-.bg-font-dark{
-    background-color: $font-dark;
 }
 
 // hide-text

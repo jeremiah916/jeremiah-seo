@@ -9,13 +9,13 @@
         .border-line{
             width:200px;
             height:2px;
-            background: $font-dark;
+            background: $primary;
         }
     }
     .mov-title{
         transition: all 0.3s;
         &:hover,&:active{
-            color: $font-light;
+            color: $font-hover;
         }
     }
     .mov-title:before{
@@ -26,7 +26,7 @@
         content: "";
         width: 200px;
         height: 0px;
-        border: 1px solid $font-dark;
+        border: 1px solid $primary;
     }
     .mov-title:after{
         display: inline-block;
@@ -37,7 +37,7 @@
         width: 200px;
         color: #fff;
         height: 0px;
-        border: 1px solid $font-dark;
+        border: 1px solid $primary;
     }    
     .video-container {
         position: relative;

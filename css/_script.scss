@@ -46,7 +46,7 @@
     .border-line{
         width:100px;
         height:2px;
-        background: $primary
+        background: white;
     }
     li{
         width: 30%;
@@ -56,13 +56,13 @@
             background-size: cover;
         }
         .img-1{
-            background-image:url(../img/偷光.jpg);
+            background-image:url(../img/tsb.jpg);
         }
         .img-2{
-            background-image:url(../img/shoot.jpg);
+            background-image:url(../img/tls.jpg);
         }
         .img-3{
-            background-image:url(../img/回.jpg);
+            background-image:url(../img/h.jpg);
         }
     }
     .content{
@@ -72,8 +72,8 @@
             background-color: $primary;
             border: 1px solid $primary;
             &:hover,&:active{
-                color: $font-hover;
-                background-color: white;
+                background-color: $second;
+                border: 1px solid $second;
             }
         }
     }

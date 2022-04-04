@@ -1,7 +1,7 @@
 .video{
     max-width: 992px;
     margin: 0 auto;
-    padding: 90px 50px;
+    padding: 150px 50px 70px;
     .title{
         h2{
             font-size: 33px;
@@ -9,14 +9,11 @@
         .border-line{
             width:200px;
             height:2px;
-            background: $primary;
+            background: $forth;
         }
     }
     .mov-title{
         transition: all 0.3s;
-        &:hover,&:active{
-            color: $font-hover;
-        }
     }
     .mov-title:before{
         display: inline-block;
@@ -26,7 +23,7 @@
         content: "";
         width: 200px;
         height: 0px;
-        border: 1px solid $primary;
+        border: 1px solid $font-hover;
     }
     .mov-title:after{
         display: inline-block;
@@ -37,7 +34,7 @@
         width: 200px;
         color: #fff;
         height: 0px;
-        border: 1px solid $primary;
+        border: 1px solid $font-hover;
     }    
     .video-container {
         position: relative;

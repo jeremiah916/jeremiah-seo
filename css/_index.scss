@@ -246,7 +246,18 @@
         }
     }
 }
-
+@include mobile{
+    .index{
+        .self-exp {
+            li{
+            flex-wrap: wrap;
+            }
+            .self-exp-img,.content{
+                width: 100%;
+            }
+        }
+    }
+}
 @include w630{
     .index{
         .banner {
@@ -308,8 +319,18 @@
                 padding: 50px 10px;
             }
         }
-        .weapon li p{
+        .self-exp{
+            padding: 90px 50px 90px;
+        }
+        .weapon li p,.self-exp .content{
             font-size: 18px;
+        }
+        .h3-pc{
+            display: none;
+        }
+        .h3-mob{
+            display: block;
+            line-height: 1.2;
         }
     }
 }

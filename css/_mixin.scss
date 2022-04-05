@@ -2,6 +2,7 @@ $primary: #2f3536;
 $second:#6D7365;
 $third: #A69668;
 $forth: #D9C0A3;
+$fifth: #f5e4cf;
 $font-hover: #F2AC57;
 // $font-dark: #073A59;
 // $font-light: #71BBD9;
@@ -292,6 +293,9 @@ $font-hover: #F2AC57;
 .forth{
     color: $forth;
 }
+.fifth{
+    color: $fifth;
+}
 .font-hover{
     color: $font-hover;
 }
@@ -308,6 +312,9 @@ $font-hover: #F2AC57;
 }
 .bg-forth{
     background-color: $forth;
+}
+.bg-fifth{
+    background-color: $fifth;
 }
 .bg-font-hover{
     background-color: $font-hover;

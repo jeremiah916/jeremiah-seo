@@ -1,0 +1,185 @@
+.seo{
+    .banner{
+        height: 600px;
+        background: url(../img/seo-banner.webp);
+        @include bg-img-set;
+        padding-top: 60px;
+        .border-line{
+            width:160px;
+            height:2px;
+            background: white;
+        }
+        h2{
+            font-size: 33px;
+        }
+    }
+    .article{
+        max-width: 992px;
+        line-height: 1.5;
+        padding: 90px 50px 90px;
+        h2{
+            font-size: 40px;
+        }
+        li{
+            width: 30%;
+            .img-1,.img-2,.img-3{
+                height: 200px;
+                @include bg-img-set;
+            }
+            .img-1{
+                background-image:url(../img/empty.webp);
+            }
+            .img-2{
+                background-image:url(../img/thinkthebest.webp);
+            }
+            .img-3{
+                background-image:url(../img/turn.webp);
+            }
+        }
+        .content{
+            height: 385px;
+            a{
+                transition: all 0.3s;
+                background-color: $primary;
+                border: 1px solid $primary;
+                &:hover,&:active{
+                    background-color: $second;
+                    border: 1px solid $second;
+                }
+            }
+        }
+    }
+    .web{
+        max-width: 992px;
+        line-height: 1.5;
+        padding: 90px 50px 90px;
+        h2{
+            font-size: 40px;
+        }
+        .img{
+            @include bg-img-set;
+            background-image: url(../img/garden-index.webp);
+            width: 62%;
+            height: 310px;
+        }
+        .content{
+            width: 38%;
+            a{
+                transition: all 0.3s;
+                background-color: $primary;
+                border: 1px solid $primary;
+                &:hover,&:active{
+                    background-color: $second;
+                    border: 1px solid $second;
+                }
+            }
+        }
+        h3{
+            border-bottom: 1px solid $primary;
+        }
+    }
+}
+@include pad{
+    .seo .web{
+        .img{
+            height: 350px;
+        }
+    }
+}
+
+@include w900{
+    .seo .article{
+        h2{
+            font-size: 35px;
+        }
+        ul{
+            flex-wrap: wrap;
+        }
+        li{
+            margin: 0 auto 75px;
+            width: 100%;
+            &:last-child{
+                margin: 0 auto 0px;
+            }
+            .img-1,.img-2,.img-3{
+                height: 300px;
+            }
+        }
+        .content{
+            height: auto;
+            a{
+                padding: 15px;
+            }
+            h3{
+                margin-bottom: 20px;
+            }
+            p{
+                font-size: 20px;
+                margin-bottom: 50px;
+            }
+        }
+    }
+    .seo .web h2{
+        font-size: 35px;
+    }
+}
+
+@include mobile{
+    .seo .web .main{
+        display: block;
+        .img,.content{
+            width: 100%;
+        }
+        .content{
+            padding: 30px;
+        }
+    }
+}
+
+@include w520{
+    .seo{
+        .banner{
+            height: 500px;
+            h2{
+                font-size: 24px;
+            }
+        }
+        .article h2,.web h2{
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@include iphone8-plus{
+    .seo {
+        .article .content{
+            h3{
+                font-size: 20px;
+            }
+            a{
+                font-size: 18px;
+            }
+            p{
+                font-size: 16px;
+            }
+        }
+        .web{
+            .img{
+                background-position: left;
+            }
+            .content{
+                padding: 30px 25px;
+            }
+            h3{
+                font-size: 20px;
+            }
+            a{
+                font-size: 18px;
+            }
+            p{
+                font-size: 16px;
+            }
+        }
+    }
+}

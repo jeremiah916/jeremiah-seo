@@ -14,7 +14,7 @@
         }
     }
 
-    .bg-note{
+    .ability{
         position: relative;
         // background-image: url(../img/note1.jpeg);
         background-position: center;
@@ -111,7 +111,7 @@
                 transition: all 0.3s;
                 color: $primary;
                 &:hover,&:active{
-                    color: $font-hover;
+                    color: $second;
                     transform: scale(1.05);
                 }
             }
@@ -126,13 +126,13 @@
             @include bg-img-set;
         }
         .img-1{
-            background-image: url(../img/screenwriter.jpg);
+            background-image: url(../img/screenwriter.webp);
         }
         .img-2{
-            background-image: url(../img/activity.jpg);
+            background-image: url(../img/activity.webp);
         }
         .img-3{
-            background-image: url(../img/seo.jpg);
+            background-image: url(../img/seo.webp);
         }
         .content{
             width: 45%;
@@ -141,6 +141,9 @@
                 border-bottom: 1px solid $primary;
             }
         }
+    }
+    .linktoseo:hover,.linktoseo:active{
+        color: $primary;
     }
 }
 
@@ -196,7 +199,7 @@
 
 @include w900{
     .index {
-        .banner .slogan,.bg-note h2{
+        .banner .slogan,.ability h2{
             font-size: 35px;
         }
         .self-intro {
@@ -227,14 +230,14 @@
                 }
             }
         }
-        .bg-note{
+        .ability{
             padding: 100px 50px;
         }
         .weapon{
             flex-wrap: wrap;
             li{
                 margin: 0 auto 75px;
-                width: 100%;
+                width: 80%;
                 &:last-child{
                     margin: 0 auto 0px;
                 }
@@ -253,7 +256,7 @@
             flex-wrap: wrap;
             }
             .self-exp-img,.content{
-                width: 100%;
+                width: 80%;
             }
         }
     }
@@ -294,7 +297,7 @@
         .banner .slogan-mob{
             font-size: 26px;
         }
-        .bg-note h2{
+        .ability h2{
             font-size: 24px;
         }
         .weapon li{

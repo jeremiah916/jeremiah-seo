@@ -59,8 +59,8 @@ body{
         }
         a{
             &:hover,&:active{
-                color: white;
-                background-color: $primary;
+                color: $font-hover;
+                background-color: $second;
             }
         }
     }
